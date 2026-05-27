@@ -8,10 +8,10 @@ interface ObsidianVelocityPageProps {
 
 export default function ObsidianVelocityPage({ isOpen, onClose, onBookNow }: ObsidianVelocityPageProps) {
   const images = {
-    hero: '/media/Black_Plane_12.jpeg',
-    specs: '/media/Black_Plane_2.jpeg',
-    interior: '/media/Black_Plane_8.jpeg',
-    services: '/media/Black_Plane_6.jpeg'
+    hero: '/media/Black Plane 12.jpeg',
+    specs: '/media/Black Plane 2.jpeg',
+    interior: '/media/Black Plane 8.jpeg',
+    services: '/media/Black Plane 6.jpeg'
   }
 
   return (

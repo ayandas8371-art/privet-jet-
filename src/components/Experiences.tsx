@@ -23,7 +23,7 @@ export default function Experiences() {
     <section style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh' }}>
       {/* VIDEO */}
       <video 
-        src="/media/video/Gold_Plane_video_2.mp4" 
+        src="/media/video/Private_jet_engine_spinning_sunset_orignal.mp4" 
         autoPlay 
         loop 
         muted 
