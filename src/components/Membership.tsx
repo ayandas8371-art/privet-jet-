@@ -105,7 +105,7 @@ export default function Membership() {
         <div style={{ position: 'sticky', top: '120px', borderRadius: '4px', overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.12)' }}>
           <video 
             className="membership-video"
-            src="/media/video/Private_jet_flying_above_clouds_2 orignal.mp4" 
+            src="/media/video/Main%20hero%20video%204.mp4" 
             autoPlay 
             loop 
             muted 

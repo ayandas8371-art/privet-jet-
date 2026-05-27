@@ -27,7 +27,7 @@ export default function Faq() {
     <section style={{ position: 'relative', overflow: 'hidden', padding: 'clamp(80px,10vw,140px) clamp(24px,6vw,96px)' }}>
       {/* CINEMATIC VIDEO BACKGROUND */}
       <video 
-        src="/media/video/jet_engine_cinematicmp_.mp4" 
+        src="/media/video/Grey%20Plane%20video%201.mp4" 
         autoPlay 
         loop 
         muted 

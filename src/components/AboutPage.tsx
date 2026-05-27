@@ -106,7 +106,7 @@ export default function AboutPage({ isOpen, onClose }: AboutPageProps) {
                 {/* Image Container */}
                 <div className="absolute inset-0 overflow-hidden rounded-sm z-10 border border-[#1c3557]/20 bg-[#f8f6f2]">
                   <div className="absolute inset-0 bg-black/10 z-20 group-hover:bg-transparent transition-colors duration-700" />
-                  <img src="/media/main hero image.jpg" alt="Heritage" className="w-full h-full object-cover transition-transform duration-[10s] group-hover:scale-105" />
+                  <img src="/media/main%20hero%20image.jpg" alt="Heritage" className="w-full h-full object-cover transition-transform duration-[10s] group-hover:scale-105" />
                 </div>
               </div>
             </motion.section>
@@ -126,7 +126,7 @@ export default function AboutPage({ isOpen, onClose }: AboutPageProps) {
                 {/* Image Container */}
                 <div className="absolute inset-0 overflow-hidden rounded-sm z-10 border border-[#1c3557]/20 bg-[#f8f6f2]">
                   <div className="absolute inset-0 bg-black/10 z-20 group-hover:bg-transparent transition-colors duration-700" />
-                  <img src="/media/Golden Plane 13.jpeg" alt="Modern Fleet" className="w-full h-full object-cover transition-transform duration-[10s] group-hover:scale-105" />
+                  <img src="/media/Golden%20Plane%2013.jpeg" alt="Modern Fleet" className="w-full h-full object-cover transition-transform duration-[10s] group-hover:scale-105" />
                 </div>
               </div>
               <div>
@@ -190,7 +190,7 @@ export default function AboutPage({ isOpen, onClose }: AboutPageProps) {
             >
               {/* Premium Background Image Blend (Faded into light bg) */}
               <div className="absolute inset-0 z-0">
-                <img src="/media/Black Plane 1.jpeg" alt="Standard" className="w-full h-full object-cover opacity-10" />
+                <img src="/media/Black%20Plane%201.jpeg" alt="Standard" className="w-full h-full object-cover opacity-10" />
                 <div className="absolute inset-0 bg-gradient-to-b from-[#f8f6f2] via-[#f8f6f2]/80 to-[#f8f6f2]" />
               </div>
 

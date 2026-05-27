@@ -20,7 +20,7 @@ export const yachts: Yacht[] = [
     tagline: 'Silent Power Above The Clouds.',
     style: 'Black stealth luxury jet',
     bestFor: 'Dark cinematic cloud videos',
-    videoSrc: '/media/video/Black Plane video 5.mp4',
+    videoSrc: '/media/video/Black%20Plane%20video%205.mp4',
     quickSpecs: [
       { label: 'LENGTH', value: '142 FT' },
       { label: 'CRUISING SPEED', value: '610 MPH' },
@@ -45,8 +45,8 @@ export const yachts: Yacht[] = [
       }
     ],
     images: [
-      '/media/Black Plane 9.jpeg',
-      '/media/Black Plane 14.jpeg'
+      '/media/Black%20Plane%209.jpeg',
+      '/media/Black%20Plane%2014.jpeg'
     ]
   },
   {
@@ -55,7 +55,7 @@ export const yachts: Yacht[] = [
     tagline: 'Crafted For Those Above Ordinary.',
     style: 'Golden ultra-luxury jet',
     bestFor: 'Warm sunset/golden cloud visuals',
-    videoSrc: '/media/video/Gold Plane video 3.mp4',
+    videoSrc: '/media/video/Gold%20Plane%20video%203.mp4',
     quickSpecs: [
       { label: 'LENGTH', value: '148 FT' },
       { label: 'CRUISING SPEED', value: '640 MPH' },
@@ -80,8 +80,8 @@ export const yachts: Yacht[] = [
       }
     ],
     images: [
-      '/media/Golden Plane 16.jpeg',
-      '/media/Golden Plane 22.jpeg'
+      '/media/Golden%20Plane%2016.jpeg',
+      '/media/Golden%20Plane%2022.jpeg'
     ]
   },
   {
@@ -90,7 +90,7 @@ export const yachts: Yacht[] = [
     tagline: 'Precision Engineered Luxury.',
     style: 'Premium gray heavy jet',
     bestFor: 'Cold cinematic storm-cloud visuals',
-    videoSrc: '/media/video/Grey Plane video 6.mp4',
+    videoSrc: '/media/video/Grey%20Plane%20video%206.mp4',
     quickSpecs: [
       { label: 'LENGTH', value: '155 FT' },
       { label: 'CRUISING SPEED', value: '655 MPH' },
@@ -115,8 +115,8 @@ export const yachts: Yacht[] = [
       }
     ],
     images: [
-      '/media/Grey Plane 3.jpeg',
-      '/media/Grey Plane 9.jpeg'
+      '/media/Grey%20Plane%203.jpeg',
+      '/media/Grey%20Plane%209.jpeg'
     ]
   }
 ]
