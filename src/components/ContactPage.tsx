@@ -72,7 +72,7 @@ export default function ContactPage({ isOpen, onClose }: ContactPageProps) {
           {/* CINEMATIC HERO */}
           <div style={{ position: 'relative', height: '60vh', minHeight: '500px', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', paddingBottom: '80px', overflow: 'hidden' }}>
             <video 
-              src="/media/video/fling%20jet%20cinematic%202.mp4" 
+              src="/media/video/fling jet cinematic 2.mp4" 
               autoPlay 
               loop 
               muted 
@@ -162,7 +162,7 @@ export default function ContactPage({ isOpen, onClose }: ContactPageProps) {
               
               {/* IMAGE ENHANCEMENT */}
               <div style={{ width: '100%', height: '240px', borderRadius: '8px', overflow: 'hidden', position: 'relative', boxShadow: '0 8px 32px rgba(0,0,0,0.5)' }}>
-                <img src="/media/Black%20Plane%204.jpeg" alt="Luxury Jet" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s', cursor: 'pointer' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'} />
+                <img src="/media/Black Plane 4.jpeg" alt="Luxury Jet" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s', cursor: 'pointer' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(12,12,14,0.8), transparent)' }} />
               </div>
 
@@ -179,7 +179,7 @@ export default function ContactPage({ isOpen, onClose }: ContactPageProps) {
 
               {/* SECOND IMAGE ENHANCEMENT */}
               <div style={{ width: '100%', height: '160px', borderRadius: '8px', overflow: 'hidden', position: 'relative', boxShadow: '0 8px 32px rgba(0,0,0,0.1)' }}>
-                <img src="/media/main%20hero%20image.jpg" alt="Aviation Lifestyle" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s', cursor: 'pointer' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'} />
+                <img src="/media/main hero image.jpg" alt="Aviation Lifestyle" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s', cursor: 'pointer' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(28,53,87,0.3), transparent)' }} />
               </div>
             </div>
