@@ -12,7 +12,7 @@ export default function LegalPage({ documentType, onClose }: LegalPageProps) {
     privacy: {
       title: "PRIVACY POLICY",
       date: "EFFECTIVE: JANUARY 1, 2026",
-      image: "/media/Black Plane 4.jpeg",
+      image: "/media/Black_Plane_4.jpeg",
       text: [
         "Privet Jets (\"we,\" \"our,\" or \"us\") respects your privacy and is deeply committed to protecting your personal data. This privacy policy informs you about how we look after your personal data when you visit our website, utilize our concierge services, or charter our aircraft, and tells you about your privacy rights and how the law protects you.",
         "We collect and process personal data to provide an unparalleled, bespoke aviation experience. This may include identity data, contact data, financial data, and highly specific preference data (such as dietary requirements and travel habits) to ensure perfection on every flight.",
@@ -23,7 +23,7 @@ export default function LegalPage({ documentType, onClose }: LegalPageProps) {
     terms: {
       title: "TERMS OF SERVICE",
       date: "EFFECTIVE: JANUARY 1, 2026",
-      image: "/media/Grey Plane 15.jpeg",
+      image: "/media/Grey_Plane_15.jpeg",
       text: [
         "These Terms of Service govern your use of the Privet Jets website and our private aviation services. By accessing our platform or booking a charter, you agree to be bound by these terms in their entirety.",
         "All charter flights are subject to aircraft availability, crew availability, and final confirmation by our operations team. Quotes provided are estimates and may be subject to change based on routing adjustments, airport fees, or de-icing requirements.",
@@ -34,7 +34,7 @@ export default function LegalPage({ documentType, onClose }: LegalPageProps) {
     cookies: {
       title: "COOKIE POLICY",
       date: "EFFECTIVE: JANUARY 1, 2026",
-      image: "/media/Golden Plane 6.jpeg",
+      image: "/media/Golden_Plane_6.jpeg",
       text: [
         "To provide a seamless, premium digital experience, the Privet Jets website uses cookies and similar tracking technologies.",
         "Cookies are small text files placed on your device to collect standard internet log information and visitor behavior information. When you visit our websites, we may collect information from you automatically through cookies or similar technology.",
