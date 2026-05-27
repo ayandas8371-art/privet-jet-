@@ -8,10 +8,10 @@ interface AurumEclipsePageProps {
 
 export default function AurumEclipsePage({ isOpen, onClose, onBookNow }: AurumEclipsePageProps) {
   const images = {
-    hero: '/media/Golden Plane 7.jpeg',
-    specs: '/media/Golden Plane 4.jpeg',
-    interior: '/media/Golden Plane 8.jpeg',
-    services: '/media/Golden Plane 9.jpeg'
+    hero: '/media/Golden_Plane_7.jpeg',
+    specs: '/media/Golden_Plane_4.jpeg',
+    interior: '/media/Golden_Plane_8.jpeg',
+    services: '/media/Golden_Plane_9.jpeg'
   }
 
   return (
