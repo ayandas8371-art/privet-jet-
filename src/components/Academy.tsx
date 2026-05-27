@@ -54,7 +54,7 @@ export default function Academy() {
             transition={{ duration: 1, ease: [0.19, 1, 0.22, 1] }}
             className="relative md:absolute md:top-0 md:right-0 w-full md:w-[75%] aspect-video md:aspect-auto md:h-[65%] rounded overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.1)]"
           >
-            <img src="/media/Golden Plane 16.jpeg" alt="Jet soaring above clouds" className="w-full h-full object-cover academy-golden-plane" />
+            <img src="/media/Golden_Plane_16.jpeg" alt="Jet soaring above clouds" className="w-full h-full object-cover academy-golden-plane" />
           </motion.div>
           
           <motion.div 
@@ -74,7 +74,7 @@ export default function Academy() {
             transition={{ duration: 1, delay: 0.4, ease: [0.19, 1, 0.22, 1] }}
             className="relative md:absolute md:bottom-0 md:right-[10%] w-full md:w-[45%] aspect-video md:aspect-auto md:h-[35%] rounded overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.15)] border-[8px] border-[var(--bg-base)]"
           >
-            <img src="/media/Grey Plane 3.jpeg" alt="Titanium Stratus on tarmac" className="w-full h-full object-cover academy-black-plane-2" />
+            <img src="/media/Grey_Plane_3.jpeg" alt="Titanium Stratus on tarmac" className="w-full h-full object-cover academy-black-plane-2" />
           </motion.div>
 
         </div>

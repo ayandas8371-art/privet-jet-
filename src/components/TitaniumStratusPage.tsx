@@ -8,10 +8,10 @@ interface TitaniumStratusPageProps {
 
 export default function TitaniumStratusPage({ isOpen, onClose, onBookNow }: TitaniumStratusPageProps) {
   const images = {
-    hero: '/media/Grey Plane 12.jpeg',
-    specs: '/media/Grey Plane 3.jpeg',
-    interior: '/media/Grey Plane 8.jpeg',
-    services: '/media/Grey Plane 10.jpeg'
+    hero: '/media/Grey_Plane_12.jpeg',
+    specs: '/media/Grey_Plane_3.jpeg',
+    interior: '/media/Grey_Plane_8.jpeg',
+    services: '/media/Grey_Plane_10.jpeg'
   }
 
   return (

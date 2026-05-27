@@ -5,7 +5,7 @@ export default function BrandManifesto() {
     <section style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh' }}>
       {/* VIDEO */}
       <video 
-        src="/media/video/Private_jet_flying_above_clouds_2 orignal.mp4" 
+        src="/media/video/Private_jet_flying_above_clouds_2_orignal.mp4" 
         autoPlay 
         loop 
         muted 

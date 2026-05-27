@@ -46,7 +46,7 @@ export default function MembershipPage({ isOpen, onClose, onContactOpen }: Membe
           <div className="relative w-full min-h-[70vh] flex flex-col justify-end">
             <div className="absolute inset-0 z-0">
               <img 
-                src="/media/Golden Plane 18.jpeg" 
+                src="/media/Golden_Plane_18.jpeg" 
                 alt="Membership Hero" 
                 className="w-full h-full object-cover" 
               />
@@ -103,7 +103,7 @@ export default function MembershipPage({ isOpen, onClose, onContactOpen }: Membe
                 className="flex-1 w-full"
               >
                 <div className="w-full aspect-video rounded-sm overflow-hidden shadow-[0_20px_60px_rgba(28,53,87,0.15)] relative">
-                  <img src="/media/Golden Plane 17.jpeg" alt="Luxury Interior" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
+                  <img src="/media/Golden_Plane_17.jpeg" alt="Luxury Interior" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
                   <div className="absolute inset-0 bg-[#1c3557]/10" />
                 </div>
               </motion.div>
