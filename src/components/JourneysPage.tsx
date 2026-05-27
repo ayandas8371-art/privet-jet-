@@ -37,7 +37,7 @@ export default function JourneysPage({ isOpen, onClose, onBookNow }: JourneysPag
       title: "MALDIVES PRIVATE ATOLL", 
       subtitle: "INDIAN OCEAN",
       accentColor: "#eebb4d", // Golden sunlight
-      img: "/media/Golden_Plane_17.jpeg", 
+      img: "/media/Golden Plane 17.jpeg", 
       desc: "Total disconnection. Fly direct to Malé, where our concierge team coordinates an immediate luxury seaplane transfer directly to your overwater villa.",
       flightTime: "10H 20M (FROM DXB)"
     }

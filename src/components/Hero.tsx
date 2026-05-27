@@ -43,7 +43,7 @@ export default function Hero({ fleetOpen, menuOpen, onBookNow }: HeroProps) {
       >
         <video 
           className="hero-video"
-          src="/media/video/Main_hero_video_2.mp4" 
+          src="/media/video/Main hero video 2.mp4" 
           autoPlay 
           loop 
           muted 
