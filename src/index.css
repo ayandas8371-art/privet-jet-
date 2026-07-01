@@ -340,7 +340,20 @@ select:-webkit-autofill {
     height: 48px;
     padding: 0 16px;
     font-size: 0.6rem;
+    /* Remove the browser's native circular tap-highlight ring
+       that appears and spins on mobile tap */
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
   }
+  /* Also kill focus ring from keyboard navigation on mobile */
+  .menu-toggle:focus { outline: none; box-shadow: none; }
+
+  /* ── SCROLL INDICATOR ────────────────────────────────────── */
+  /* Desktop: visible. Mobile: hidden — touch users scroll naturally */
+  .scroll-indicator { display: none !important; }
+
 
   /* ── STAGGERED MENU PANEL ───────────────────────────────── */
   /* Full width on mobile for the side-drawer */

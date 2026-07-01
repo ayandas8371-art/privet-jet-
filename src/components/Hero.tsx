@@ -133,6 +133,7 @@ export default function Hero({ fleetOpen, menuOpen, onBookNow }: HeroProps) {
       <AnimatePresence>
         {!scrolled && (
           <motion.div 
+            className="scroll-indicator"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
