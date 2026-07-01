@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Preloader from './components/Preloader'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import RippleTrail from './components/RippleTrail'
@@ -27,6 +28,7 @@ import LegalPage from './components/LegalPage'
 import ContactPage from './components/ContactPage'
 
 function App() {
+  const [siteReady, setSiteReady] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [fleetOpen, setFleetOpen] = useState(false)
   const [blogOpen, setBlogOpen] = useState(false)
@@ -42,6 +44,11 @@ function App() {
 
   return (
     <>
+      {/* PRELOADER — covers everything until critical assets are ready */}
+      <Preloader onComplete={() => setSiteReady(true)} />
+
+      {/* SITE CONTENT — rendered underneath; becomes visible after preloader exits */}
+      <div style={{ visibility: siteReady ? 'visible' : 'hidden' }}>
       <Header 
         menuOpen={menuOpen} 
         onBlogOpen={() => setBlogOpen(true)}
@@ -113,6 +120,7 @@ function App() {
       <ObsidianVelocityPage isOpen={obsidianOpen} onClose={() => { setObsidianOpen(false); setFleetOpen(true); }} onBookNow={() => { setObsidianOpen(false); setBookingOpen(true); }} />
       <LegalPage documentType={legalDoc} onClose={() => setLegalDoc(null)} />
       <ContactPage isOpen={contactOpen} onClose={() => setContactOpen(false)} />
+      </div>
     </>
   )
 }
