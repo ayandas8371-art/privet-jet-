@@ -27,7 +27,7 @@ export default function CookieConsent() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ duration: 0.6, ease: [0.19, 1, 0.22, 1] }}
-          className="glass-mid"
+          className="glass-mid cookie-banner"
           style={{
             position: 'fixed',
             bottom: '24px',

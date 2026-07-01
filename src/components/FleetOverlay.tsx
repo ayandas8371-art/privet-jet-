@@ -28,7 +28,7 @@ export default function FleetOverlay({ isOpen, onClose, onObsidianOpen, onAurumO
           }}
         >
           {/* HEADER */}
-          <div style={{
+          <div className="fleet-overlay-header" style={{
             position: 'absolute',
             top: 0,
             left: 0,
@@ -48,7 +48,7 @@ export default function FleetOverlay({ isOpen, onClose, onObsidianOpen, onAurumO
               <span style={{ fontSize: '14px', letterSpacing: '0.3em', color: 'white' }}>PRIVET JETS</span>
             </div>
             
-            <span style={{ fontSize: '10px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.5)' }}>
+            <span className="fleet-overlay-label" style={{ fontSize: '10px', letterSpacing: '0.3em', color: 'rgba(255,255,255,0.5)' }}>
               OUR FLEET
             </span>
 
@@ -74,7 +74,7 @@ export default function FleetOverlay({ isOpen, onClose, onObsidianOpen, onAurumO
           </div>
 
           {/* SPLIT GRID */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', flex: 1, height: '100vh' }}>
+          <div className="fleet-overlay-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', flex: 1, height: '100vh' }}>
             {yachts.map((yacht, i) => (
               <motion.div
                 key={yacht.id}
