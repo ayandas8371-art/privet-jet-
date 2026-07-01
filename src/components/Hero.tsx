@@ -32,6 +32,7 @@ export default function Hero({ fleetOpen, menuOpen, onBookNow }: HeroProps) {
     <>
       {/* FIXED VIDEO BACKGROUND */}
       <div 
+        className="hero-video-wrapper"
         style={{
           position: 'fixed',
           inset: 0,

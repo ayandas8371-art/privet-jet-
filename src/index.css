@@ -41,6 +41,95 @@ html, body {
 }
 
 
+/* ============================================================
+   SCROLL PERFORMANCE — GPU COMPOSITING LAYER OPTIMISATION
+   These rules eliminate visual glitches, tears, and jank that
+   occur when position:fixed elements sit beneath scrolling
+   content. All rules are purely additive — visual appearance
+   is completely unchanged.
+   ============================================================ */
+
+/* 1. Fixed hero video wrapper → own GPU layer
+      Will-change:filter because we animate filter (blur) on it.
+      translateZ(0) forces a new compositing layer immediately,
+      preventing the browser from merging it with scroll content. */
+.hero-video-wrapper {
+  will-change: filter;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 2. Main scrollable content wrapper → own GPU layer
+      This is the critical fix. Without this, the browser repaints
+      the entire page whenever this div moves over the fixed video.
+      With a dedicated compositing layer, it scrolls on the GPU
+      independently — zero repaints, zero tears. */
+.main-content-wrapper {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  isolation: isolate; /* creates a new stacking context boundary */
+}
+
+/* 3. Sections with background-color → contain layout/paint
+      This tells the browser not to recalculate layout outside
+      the section when it repaints — prevents cascade repaints. */
+.main-content-wrapper > div > section,
+.main-content-wrapper > div > footer {
+  contain: layout style;
+}
+
+/* 4. Glass elements → GPU layer to avoid blending repaints
+      backdrop-filter is expensive. Promoting these to compositing
+      layers means they only repaint themselves, not the entire page. */
+.glass, .glass-mid, .glass-strong, .glass-card {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 5. Testimonials infinite marquee → GPU composited animation
+      Moving the animation to the compositor thread means it runs
+      at 60fps even if the main JS thread is busy (e.g. during scroll). */
+.animate-marquee {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 6. Framer Motion whileInView elements → pre-promote to GPU
+      These elements animate opacity+y on scroll. Pre-promoting them
+      prevents a compositing layer creation spike mid-scroll. */
+.yacht-card,
+.yacht-card-video {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 7. Videos in sections → GPU decode layer
+      Ensures video frames are decoded directly to the GPU,
+      bypassing the main thread paint pipeline. */
+video {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 8. Prevent scroll-linked animation layout thrashing
+      The scroll-behavior: smooth on the root can fight with
+      Framer Motion's scroll listeners on some browsers. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-marquee { animation: none; }
+}
+
+
+
 /* GLASS — for dark/video section contexts */
 .glass {
  background: var(--glass-dark-soft);

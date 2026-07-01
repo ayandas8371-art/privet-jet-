@@ -82,7 +82,7 @@ function App() {
         onTitaniumOpen={() => setTitaniumOpen(true)}
       />
       
-      <div style={{ position: 'relative', zIndex: 25 }}>
+      <div className="main-content-wrapper" style={{ position: 'relative', zIndex: 25 }}>
         <div style={{ height: '100vh' }} />
         <div style={{ backgroundColor: 'var(--bg-base)' }}>
           <BrandManifesto />
