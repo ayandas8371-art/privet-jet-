@@ -72,7 +72,7 @@ export default function Hero({ fleetOpen, menuOpen, onBookNow }: HeroProps) {
         }}
       >
         {/* TOP TEXT BLOCK */}
-        <div style={{
+        <div className="hero-top-block" style={{
           position: 'absolute',
           top: '10%', 
           left: '50%',
@@ -94,7 +94,7 @@ export default function Hero({ fleetOpen, menuOpen, onBookNow }: HeroProps) {
 
           {/* HEADLINE PART 1 */}
           <div style={{ overflow: 'hidden' }}>
-            <motion.div variants={textVariants} style={{ fontSize: 'clamp(48px, 9.5vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.01em', textTransform: 'uppercase', color: 'white' }}>
+            <motion.div variants={textVariants} className="hero-headline-1" style={{ fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.01em', textTransform: 'uppercase', color: 'white' }}>
               <span style={{ fontStyle: 'normal' }}>THE SKY</span>{' '}
               <span style={{ fontStyle: 'italic' }}>IS YOURS.</span>
             </motion.div>
@@ -102,30 +102,28 @@ export default function Hero({ fleetOpen, menuOpen, onBookNow }: HeroProps) {
         </div>
 
         {/* BOTTOM LEFT TEXT BLOCK */}
-        <div style={{
+        <div className="hero-bottom-block" style={{
           position: 'absolute',
           bottom: '4%',
-          left: 'clamp(24px, 6vw, 96px)', 
           display: 'flex', 
           flexDirection: 'column', 
           alignItems: 'flex-start', 
           textAlign: 'left',
-          maxWidth: 'clamp(340px, 48vw, 640px)',
         }}>
           {/* HEADLINE PART 2 */}
           <div style={{ overflow: 'hidden' }}>
-            <motion.div variants={textVariants} style={{ fontStyle: 'normal', fontSize: 'clamp(48px, 9.5vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.01em', textTransform: 'uppercase', color: 'white' }}>
+            <motion.div variants={textVariants} className="hero-headline-2" style={{ fontStyle: 'normal', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.01em', textTransform: 'uppercase', color: 'white' }}>
               Fly Beyond Luxury.
             </motion.div>
           </div>
           <div style={{ overflow: 'hidden' }}>
-            <motion.div variants={textVariants} style={{ fontStyle: 'italic', fontSize: 'clamp(48px, 9.5vw, 130px)', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.01em', textTransform: 'uppercase', color: 'white' }}>
+            <motion.div variants={textVariants} className="hero-headline-2" style={{ fontStyle: 'italic', fontWeight: 400, lineHeight: 0.91, letterSpacing: '-0.01em', textTransform: 'uppercase', color: 'white' }}>
               NOW.
             </motion.div>
           </div>
 
           {/* SUBTEXT */}
-          <motion.div variants={textVariants} style={{ marginTop: '28px', fontSize: 'clamp(10px,1vw,11px)', letterSpacing: '0.2em', maxWidth: '340px', lineHeight: 1.9, color: 'rgba(255,255,255,0.6)' }}>
+          <motion.div variants={textVariants} className="hero-subtext" style={{ marginTop: '28px', letterSpacing: '0.2em', lineHeight: 1.9, color: 'rgba(255,255,255,0.6)' }}>
             Experience the world's most exclusive private jet charter, tailored to your schedule and curated to your standards.
           </motion.div>
         </div>

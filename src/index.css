@@ -378,13 +378,30 @@ select:-webkit-autofill {
 }
 
 /* ============================================================
+   HERO RESPONSIVE TEXT CLASSES
+   Extracted from inline styles so they can be overridden 
+   for Desktop Site mode.
+   ============================================================ */
+.hero-headline-1, .hero-headline-2 {
+  font-size: clamp(48px, 9.5vw, 130px);
+}
+.hero-bottom-block {
+  left: clamp(24px, 6vw, 96px);
+  max-width: clamp(340px, 48vw, 640px);
+}
+.hero-subtext {
+  font-size: clamp(10px, 1vw, 11px);
+  max-width: 340px;
+}
+
+
+/* ============================================================
    DESKTOP SITE MODE FIX (FOR SMARTPHONES)
    When "Desktop Site" is enabled on a smartphone, Chrome creates
    a wide viewport (~980px) but the screen is still portrait,
    creating a massively tall layout (e.g. 980x1750).
-   This causes 100vh sections to severely crop 16:9 background videos.
-   To make it look exactly like the desktop site, we cap the height
-   of these full-screen sections to a desktop-like aspect ratio.
+   To perfectly mimic a landscape desktop monitor on this tall 
+   screen, we redefine the full-screen height to a 16:9 ratio.
    ============================================================ */
 @media (min-width: 769px) and (orientation: portrait) {
   :root {
@@ -393,6 +410,21 @@ select:-webkit-autofill {
   .hero-video-wrapper,
   .hero-text-wrapper {
     height: var(--section-height) !important;
+  }
+  
+  /* Scale down the Hero text so it fits beautifully in the shorter 
+     16:9 container, maintaining the massive gap between top and bottom 
+     text blocks just like a real desktop monitor. */
+  .hero-headline-1, .hero-headline-2 {
+    font-size: clamp(32px, 6vw, 70px) !important;
+  }
+  .hero-bottom-block {
+    left: 4vw !important;
+    max-width: clamp(260px, 35vw, 400px) !important;
+  }
+  .hero-subtext {
+    font-size: 8px !important;
+    max-width: 260px !important;
   }
 }
 
