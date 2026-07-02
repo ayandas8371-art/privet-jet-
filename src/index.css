@@ -73,12 +73,14 @@ html, body {
   isolation: isolate; /* creates a new stacking context boundary */
 }
 
-/* 3. Sections with background-color → contain layout/paint
-      This tells the browser not to recalculate layout outside
-      the section when it repaints — prevents cascade repaints. */
+/* 3. Sections → contain style only (NOT layout)
+      contain:layout was causing Chrome to recalculate the
+      containing block for position:absolute video backgrounds,
+      making BrandManifesto and Experiences videos appear cropped.
+      contain:style alone prevents cascade repaints safely. */
 .main-content-wrapper > div > section,
 .main-content-wrapper > div > footer {
-  contain: layout style;
+  contain: style;
 }
 
 /* 4. Glass elements → GPU layer to avoid blending repaints
@@ -111,14 +113,14 @@ html, body {
   -webkit-backface-visibility: hidden;
 }
 
-/* 7. Videos in sections → GPU decode layer
-      Ensures video frames are decoded directly to the GPU,
-      bypassing the main thread paint pipeline. */
-video {
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
+/* 7. Hero and section video wrappers → GPU decode layer
+      Only apply transform to the wrapper divs, NOT to video
+      elements directly. Applying translateZ(0) directly to
+      video elements with objectFit:cover causes Chrome to
+      render the video in a separate layer that ignores the
+      objectFit geometry, making videos appear zoomed/cropped.
+      The parent wrappers (.hero-video-wrapper, sections) already
+      have their own compositing layers — that is sufficient. */
 
 /* 8. Prevent scroll-linked animation layout thrashing
       The scroll-behavior: smooth on the root can fight with
