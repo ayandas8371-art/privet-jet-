@@ -403,6 +403,18 @@ select:-webkit-autofill {
     overflow-x: hidden;
   }
 
+  /* ── CUSTOM CURSOR / RIPPLE TRAIL ───────────────────────── */
+  /* The aviation crosshair cursor ring is desktop-only.
+     On touch devices, touch events trigger it causing a
+     floating circle to appear on screen. Hide it entirely. */
+  .ripple-trail-container {
+    display: none !important;
+  }
+  /* Restore the default cursor that RippleTrail hides globally */
+  body {
+    cursor: auto !important;
+  }
+
   /* ── HERO ───────────────────────────────────────────────── */
   /* Bring the fixed booking button up so it doesn't clash with
      mobile browser chrome at the bottom */

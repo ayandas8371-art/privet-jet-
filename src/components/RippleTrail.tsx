@@ -51,7 +51,7 @@ export default function RippleTrail() {
   }, [mouseX, mouseY])
 
   return (
-    <div style={{ position: 'fixed', inset: 0, zIndex: 9999, pointerEvents: 'none', overflow: 'hidden' }}>
+    <div className="ripple-trail-container" style={{ position: 'fixed', inset: 0, zIndex: 9999, pointerEvents: 'none', overflow: 'hidden' }}>
       
       {/* INNER DOT: Exact tracking */}
       <motion.div 
