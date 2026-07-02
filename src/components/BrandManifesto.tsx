@@ -2,7 +2,7 @@ import { motion } from 'motion/react'
 
 export default function BrandManifesto() {
   return (
-    <section className="manifesto-section" style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh' }}>
+    <section className="manifesto-section" style={{ position: 'relative', overflow: 'hidden', minHeight: 'var(--section-height)' }}>
       {/* VIDEO */}
       <video 
         src="/media/video/Private_jet_flying_above_clouds_2_orignal.mp4" 
@@ -29,7 +29,7 @@ export default function BrandManifesto() {
         display: 'flex',
         alignItems: 'flex-end',
         justifyContent: 'flex-end',
-        minHeight: '100vh',
+        minHeight: 'var(--section-height)',
         padding: 'clamp(40px,8vw,100px) clamp(24px,6vw,96px)'
       }}>
         <motion.div

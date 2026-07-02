@@ -20,7 +20,7 @@ export default function Experiences() {
   ]
 
   return (
-    <section className="experiences-section" style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh' }}>
+    <section className="experiences-section" style={{ position: 'relative', overflow: 'hidden', minHeight: 'var(--section-height)' }}>
       {/* VIDEO */}
       <video 
         src="/media/video/Private_jet_engine_spinning_sunset_orignal.mp4" 
@@ -50,7 +50,7 @@ export default function Experiences() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        minHeight: '100vh',
+        minHeight: 'var(--section-height)',
         padding: 'clamp(80px,10vw,140px) clamp(24px,6vw,96px)',
       }}>
         
