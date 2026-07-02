@@ -43,7 +43,7 @@ export default function YachtSpecs({ onBookNow, onFleetOpen, onAurumOpen, onTita
       </div>
 
       {/* Grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '16px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
         {yachts.map((yacht, i) => (
           <motion.div
             key={yacht.id}

@@ -381,17 +381,22 @@ select:-webkit-autofill {
    When "Desktop Site" is enabled on a smartphone, Chrome creates
    a wide viewport (~980px) but the screen is still portrait,
    creating a massively tall layout (e.g. 980x1750).
-   `object-fit: cover` forces severe cropping of 16:9 videos.
-   By forcing `contain`, the video renders entirely uncropped 
-   (just like on a desktop monitor), with cinematic letterboxing.
+   This causes 100vh sections to severely crop 16:9 background videos.
+   To make it look exactly like the desktop site, we cap the height
+   of these full-screen sections to a desktop-like aspect ratio.
    ============================================================ */
 @media (min-width: 769px) and (orientation: portrait) {
-  .hero-video, 
-  .manifesto-section video, 
-  .experiences-section video {
-    object-fit: contain !important;
+  .hero-video-wrapper,
+  .hero-text-wrapper,
+  .hero-spacer,
+  .manifesto-section, 
+  .experiences-section {
+    min-height: 0 !important;
+    height: 75vw !important;
   }
 }
+
+
 
 /* SMARTPHONE (max-width: 768px) */
 @media (max-width: 768px) {

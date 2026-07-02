@@ -63,6 +63,7 @@ export default function Hero({ fleetOpen, menuOpen, onBookNow }: HeroProps) {
         variants={containerVariants} 
         initial="hidden" 
         animate={fleetOpen ? 'hidden' : 'visible'}
+        className="hero-text-wrapper"
         style={{ 
           position: 'fixed', 
           inset: 0,
