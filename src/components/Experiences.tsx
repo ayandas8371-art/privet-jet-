@@ -20,7 +20,7 @@ export default function Experiences() {
   ]
 
   return (
-    <section style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh' }}>
+    <section className="experiences-section" style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh' }}>
       {/* VIDEO */}
       <video 
         src="/media/video/Private_jet_engine_spinning_sunset_orignal.mp4" 

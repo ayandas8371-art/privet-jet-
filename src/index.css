@@ -376,6 +376,23 @@ select:-webkit-autofill {
   .academy-black-plane-2 { object-position: left center !important; }
 }
 
+/* ============================================================
+   DESKTOP SITE MODE FIX (FOR SMARTPHONES)
+   When "Desktop Site" is enabled on a smartphone, Chrome creates
+   a wide viewport (~980px) but the screen is still portrait,
+   creating a massively tall layout (e.g. 980x1750).
+   `object-fit: cover` forces severe cropping of 16:9 videos.
+   By forcing `contain`, the video renders entirely uncropped 
+   (just like on a desktop monitor), with cinematic letterboxing.
+   ============================================================ */
+@media (min-width: 769px) and (orientation: portrait) {
+  .hero-video, 
+  .manifesto-section video, 
+  .experiences-section video {
+    object-fit: contain !important;
+  }
+}
+
 /* SMARTPHONE (max-width: 768px) */
 @media (max-width: 768px) {
   .hide-on-mobile { display: none !important; }
